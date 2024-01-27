@@ -1,0 +1,72 @@
+/* * General Styles */
+body{
+    background-color: #0D0D0D;
+    color: #f9f6f6;
+    overflow: hidden;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
+}
+
+/* ! Utilities */
+.bg-nav{
+    background-color: #0D0D0D;
+}
+.cursor-pointer{
+    cursor: pointer;
+}
+
+/* ^ loading screen */
+.loading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    inset: 0;
+    background-color: #0D0D0D;
+    z-index: 4;
+}
+.loader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    inset: 0;
+    background-color: #0D0D0D;
+    z-index: 1;
+}
+
+/* ~ Side Nav */
+.side-nav{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    z-index: 3;
+    left: 0;
+    transition: left 1s;
+}
+.side-nav .side-nav-logo img{
+    width: 50px;
+}
+
+/* * Search Inputs */
+#searchInputs input::placeholder{
+    color: #ccc;
+}
+
+/* ^ Main Page */
+.container .layer{
+    background-color: #f9f6f6ca;
+    color: #000;
+    width: 100%;
+    height: 100%;
+    top: 100%;
+    transition: top 0.5s;
+}
+.container .meal:hover .layer{
+    top: 0;
+}
