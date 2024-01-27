@@ -206,6 +206,7 @@ function searchByFristLetter(fLetter){
 function getCategories(){
     closeSideNav();
     dataEl.innerHTML = ``;
+    searchInputsEl.innerHTML = ``;
 
     $('.loading').fadeIn(500, async function(){
 
@@ -261,6 +262,7 @@ function getMealsInTheCategory(category){
 function getArea(){
     closeSideNav();
     dataEl.innerHTML = ``;
+    searchInputsEl.innerHTML = ``;
 
     $('.loading').fadeIn(500, async function(){
 
@@ -310,6 +312,7 @@ function getMealsInTheArea(area){
 function getIngredients(){
     closeSideNav();
     dataEl.innerHTML = ``;
+    searchInputsEl.innerHTML = ``;
 
     $('.loading').fadeIn(500, async function(){
 
@@ -358,6 +361,7 @@ function getMealInTheIngredient(ingredient){
 
 // ! Display Contact Form
 function displayContactForm(){
+    searchInputsEl.innerHTML = ``;
 
     dataEl.innerHTML = `
     <div class="contact d-flex justify-content-center align-items-center min-vh-100">
